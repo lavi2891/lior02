@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Statistics</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Country Statistics</h1>
+    <form id="search-form">
+        <label for="country-input">Search Countries:</label>
+        <input type="text" id="country-input" placeholder="Enter country name">
+        <button type="button" id="search-button">Search</button>
+        <button type="button" id="all-button">All</button>
+    </form>
+
+    <div id="statistics">
+        <p>Total countries result: <span id="num-countries">0</span></p>
+        <p>Total Countries Population: <span id="total-citizens">0</span></p>
+        <p>Average Population: <span id="citizens-average">0</span></p>
+    </div>
+
+    <table id="country-table">
+        <thead>
+            <tr>
+                <th>Country Name</th>
+                <th>Number of Citizens</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <table id="region-table">
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Number of countries</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
